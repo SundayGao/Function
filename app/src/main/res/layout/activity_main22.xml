@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".originpage.Main22Activity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnOnClick"
+        android:text="登陆" />
+
+    <Button
+        android:id="@+id/bt_main_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnOnClick"
+        android:text="页面1" />
+
+    <Button
+        android:id="@+id/bt_main_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnOnClick"
+        android:text="页面2" />
+
+    <Button
+        android:id="@+id/bt_main_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnOnClick"
+        android:text="页面3" />
+
+    <Button
+        android:id="@+id/bt_main_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnOnClick"
+        android:text="页面4" />
+
+    <Button
+        android:id="@+id/bt_main_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnOnClick"
+        android:text="页面5" />
+
+    <Button
+        android:id="@+id/bt_main_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnOnClick"
+        android:text="页面6" />
+
+    <Button
+        android:id="@+id/bt_main_7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnOnClick"
+        android:text="页面7" />
+
+    <Button
+        android:id="@+id/bt_main_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnOnClick"
+        android:text="页面8" />
+
+    <Button
+        android:id="@+id/bt_main_9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnOnClick"
+        android:text="页面9" />
+
+</LinearLayout>

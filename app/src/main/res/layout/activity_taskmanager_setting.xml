@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:itheima="http://schemas.android.com/apk/res/com.gyw.function"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#4466ff00"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="进程管理设置"
+        android:textSize="20sp" />
+
+    <com.gyw.function.mobilesafe.ui.SettingCheckView
+        itheima:bigtitle="显示系统进程"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scv_showsystem" >
+    </com.gyw.function.mobilesafe.ui.SettingCheckView>
+
+    
+     <com.gyw.function.mobilesafe.ui.SettingCheckView
+        itheima:bigtitle="锁屏清理进程"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scv_autokill" >
+    </com.gyw.function.mobilesafe.ui.SettingCheckView>
+</LinearLayout>

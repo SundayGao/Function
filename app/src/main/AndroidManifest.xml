@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gyw.function">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- Include required permissions for Google Mobile Ads to run. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".MobileSafeApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".originpage.Main22Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".originpage.Main222Activity"
+            android:label="@string/title_item_list"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".originpage.FullscreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_fullscreen"
+            android:theme="@style/FullscreenTheme" />
+
+        <activity
+            android:name=".originpage.LoginActivity"
+            android:label="@string/title_activity_login" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".originpage.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".originpage.ItemListActivity"
+            android:label="@string/title_item_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".originpage.ItemDetailActivity"
+            android:label="@string/title_item_detail"
+            android:parentActivityName=".originpage.ItemListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".originpage.ItemListActivity" />
+        </activity>
+        <activity
+            android:name=".originpage.ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".originpage.SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity
+            android:name=".originpage.Main23Activity"
+            android:label="@string/title_activity_main23"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!-- This meta-data tag is required to use Google Play Services. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".originpage.Main24Activity"
+            android:label="@string/title_activity_main24"/>
+        <!-- Include the AdActivity configChanges and theme. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <!--手机安全卫士-->
+        <activity android:name=".mobilesafe.activities.HomeActivity">
+            <intent-filter>
+                <action android:name="com.gyw.function.home" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".mobilesafe.activities.CallSmsSafeActivity"/>
+        <activity android:name=".mobilesafe.activities.LostFindActivity"/>
+        <activity android:name=".mobilesafe.activities.Setup1Activity"/>
+        <activity android:name=".mobilesafe.activities.Setup2Activity"/>
+        <activity android:name=".mobilesafe.activities.Setup3Activity"/>
+        <activity android:name=".mobilesafe.activities.Setup4Activity"/>
+        <activity android:name=".mobilesafe.activities.SelectContactActivity"/>
+        <activity android:name=".mobilesafe.activities.AppManagerActivity"/>
+        <activity android:name=".mobilesafe.activities.TaskManagerActivity"/>
+        <activity android:name=".mobilesafe.activities.TrafficManagerActivity"/>
+        <activity android:name=".mobilesafe.activities.AntiVirusActivity"/>
+        <activity android:name=".mobilesafe.activities.CleanCacheActivity"/>
+        <activity android:name=".mobilesafe.activities.AtoolsActivity"/>
+        <activity android:name=".mobilesafe.activities.NumberAddressQueryActivity"/>
+        <activity android:name=".mobilesafe.activities.CommonNumberActivity"/>
+        <activity android:name=".mobilesafe.activities.AppLockActivity"/>
+        <activity android:name=".mobilesafe.activities.SettingActivity"/>
+        <activity
+            android:name=".mobilesafe.activities.EnterPasswordActivity"
+            android:launchMode="singleInstance" >
+        </activity>
+
+        <service android:name="com.gyw.function.mobilesafe.services.AutoKillService"/>
+        <service
+            android:name="com.gyw.function.mobilesafe.services.CallSmsSafeService"
+            android:process=":callsmssafe" >
+        </service>
+        <service android:name="com.gyw.function.mobilesafe.services.ShowAddressService" />
+        <service android:name="com.gyw.function.mobilesafe.services.WatchDogService" />
+
+        <receiver
+            android:name="com.gyw.function.mobilesafe.receiver.MyAdmin"
+            android:description="@string/sample_device_admin_description"
+            android:label="@string/sample_device_admin"
+            android:permission="android.permission.BIND_DEVICE_ADMIN" >
+
+            <!-- 元数据,提供设备超级管理员的配置信息 -->
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/device_admin_sample" />
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

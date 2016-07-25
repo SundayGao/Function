@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:itheima="http://schemas.android.com/apk/res/com.gyw.function"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#4466ff00"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="设置中心"
+        android:textSize="20sp" />
+
+    <com.gyw.function.mobilesafe.ui.SettingCheckView
+        android:id="@+id/scv_setting_update"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        itheima:bigtitle="开启自动更新" >
+    </com.gyw.function.mobilesafe.ui.SettingCheckView>
+
+    <com.gyw.function.mobilesafe.ui.SettingCheckView
+        android:id="@+id/scv_setting_blacknumber"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        itheima:bigtitle="开启黑名单拦截" >
+    </com.gyw.function.mobilesafe.ui.SettingCheckView>
+
+    <com.gyw.function.mobilesafe.ui.SettingCheckView
+        android:id="@+id/scv_setting_showaddress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        itheima:bigtitle="开启号码归属地显示" >
+    </com.gyw.function.mobilesafe.ui.SettingCheckView>
+    
+      <com.gyw.function.mobilesafe.ui.SettingCheckView
+        android:id="@+id/scv_setting_applock"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        itheima:bigtitle="开启程序锁看门狗" >
+    </com.gyw.function.mobilesafe.ui.SettingCheckView>
+
+    <com.gyw.function.mobilesafe.ui.SettingChangeView
+        android:id="@+id/scv_change_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="changeAddressBg"
+        itheima:desc="半透明"
+        itheima:mytitle="归属地提示框风格" >
+    </com.gyw.function.mobilesafe.ui.SettingChangeView>
+    
+    
+
+</LinearLayout>

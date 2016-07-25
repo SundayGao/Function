@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <!--常用色-->
+    <color name="transparent">#00000000</color>
+    <color name="transparent_33">#33000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="half_black">#dd000000</color>
+    <color name="half_white">#88ffffff</color>
+    <color name="blue_30444e">#30444e</color>
+
+    <!--主题色-->
+    <!--<color name="theme_title_blue">#E4273946</color>-->
+    <color name="theme_title_blue">@color/blue_30444e</color>
+    <color name="theme_tab_blue">#f0273947</color>
+    <color name="theme_bg_white">@color/white</color>
+    <color name="theme_bg_gray">#F2F6F5</color>
+    <color name="theme_text_white">@color/white</color>
+    <color name="theme_text_gray">@color/text_gray_989898</color>
+    <color name="theme_text_black">@color/black</color>
+    <color name="theme_text_green">#1BC1AE</color>
+    <color name="theme_line_blue">#253039</color>
+
+    <!--常用字体颜色-->
+    <color name="text_white">#d8e3e9</color>
+    <color name="text_gray_b2b2b2">#b2b2b2</color>
+    <color name="text_gray_828282">#828282</color>
+    <color name="text_gray_989898">#989898</color>
+    <color name="text_gray_7d8c97">#7d8c97</color>
+    <color name="text_gray_7f778088">#7f778088</color>
+    <color name="text_gray_5a5a5a">#5a5a5a</color>
+    <color name="text_black_4b4b4b">#4b4b4b</color>
+    <color name="text_black_32000000">#32000000</color>
+    <color name="text_black_af000000">#af000000</color>
+
+    <color name="text_blue_E4273946">#E4273946</color>
+    <color name="text_light_blue">#0094fb</color>
+    <color name="text_tab_green">#1BC1AE</color>
+    <color name="text_bookdetail_menu">#67ecdc</color>
+    <color name="text_message_title">#19ab8e</color>
+    <color name="text_drive_green">#30cbbd</color>
+    <color name="text_orange_ffed9a37">#ffed9a37</color>
+    <color name="text_zhou_m">#FF7F00</color>
+    <color name="text_city_m">#545454</color>
+    <color name="text_order_numbers">#f25b42</color>
+
+    <!--常用背景色-->
+    <color name="bg_white">#F0FFFFFF</color>
+    <color name="bg_main_white">#F5F5F5</color>
+
+    <color name="bg_gray_e4e4e4">#e4e4e4</color>
+    <color name="bg_gray_fbfbfb">#FBFBFB</color>
+    <color name="bg_gray_edf1f2">#EDF1F2</color>
+    <color name="bg_gray_efefef">#EFEFEF</color>
+    <color name="bg_gray_cdcdcd">#CDCDCD</color>
+    <color name="bg_gray_fcf8f1">#fcf8f1</color>
+    <color name="bg_gray_f2f6f4">#F2F6F4</color>
+    <color name="bg_gray_eee">#eeeeee</color>
+    <color name="bg_gray_dadada">#DADADA</color>
+    <color name="bg_gray_80000000">#80000000</color>
+    <color name="bg_rentcar_to_bar">#E4fffee7</color>
+
+    <color name="bg_drive_blue">#32495a</color>
+    <color name="bg_drive_green">#273947</color>
+    <color name="bg_blue_253039">#253039</color>
+    <color name="bg_content_green">#253138</color>
+    <color name="bg_title_green">#28a777</color>
+    <color name="bg_green_19ab8e">#19ab8e</color>
+    <color name="bg_line_green">#1bc3b1</color>
+    <color name="bg_text_red">#e4f35b41</color>
+    <color name="bg_red_FD5064">#FD5064</color>
+    <color name="bg_blue_328bf0">#328bf0</color>
+    <color name="bg_yellow_FEF7DB">#FEF7DB</color>
+    <color name="bg_circle_rentcar">#ff9b3a</color>
+
+    <!--按钮颜色-->
+    <color name="btn_orange">#fe8500</color>
+    <color name="btn_orange_half">#66fe8500</color>
+    <color name="btn_green">#28a777</color>
+    <color name="btn_tab_green">#30CBBD</color>
+    <color name="btn_tab_green_half">#8030CBBD</color>
+    <color name="btn_green_coupon">#019F97</color>
+    <color name="btn_gray">#B2B2B2</color>
+    <color name="btn_red">#F25B42</color>
+    <color name="btn_red_half">#80F25B42</color>
+    <color name="btn_procketbookfirst_normal">#E4f25b42</color>
+
+    <!--线条的颜色-->
+    <color name="line_black">#253039</color>
+    <color name="line_red_F25B42">#F25B42</color>
+    <color name="text_red_ed5564">#ed5564</color>
+    <color name="text_blue_3baeda">#3baeda</color>
+    <color name="text_yellow_f4c44e">#f4c44e</color>
+    <color name="text_green_8cc051">#8cc051</color>
+    <color name="bg_rentcar_top_line">#f6dba0</color>
+
+    <!--全透明 #0000-->
+    <!--10%透明 #1600-->
+    <!--20%透明 #3200-->
+    <!--30%透明 #4800-->
+    <!--40%透明 #6400-->
+    <!--50%透明 #8000-->
+    <!--60%透明 #9600-->
+    <!--70%透明 #B200-->
+    <!--80%透明 #C800-->
+    <!--90%透明 #E400-->
+    <!--不透明（黑色） #F000-->
+</resources>
