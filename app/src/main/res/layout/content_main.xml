@@ -32,7 +32,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="btnOnClick"
-        android:text="页面2" />
+        android:text="自定义的ImageView效果" />
 
     <Button
         android:id="@+id/bt_function_4"

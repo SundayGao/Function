@@ -9,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Toast;
 
+import com.gyw.function.function3.clickdeflect.ClickDeflectActivity;
 import com.gyw.function.mobilesafe.activities.HomeActivity;
 import com.gyw.function.originpage.Main222Activity;
 
@@ -40,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(this, HomeActivity.class));
                 break;
             case R.id.bt_function_3:
-                Toast.makeText(this, "function 3", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this, ClickDeflectActivity.class));
                 break;
             case R.id.bt_function_4:
                 Toast.makeText(this, "function 4", Toast.LENGTH_SHORT).show();
