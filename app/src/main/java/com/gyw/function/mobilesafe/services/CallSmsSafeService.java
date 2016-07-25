@@ -100,7 +100,7 @@ public class CallSmsSafeService extends Service {
 					if("1".equals(result)||"3".equals(result)){
 						//System.out.println("挂断电话");
 						//记录被挂断的电话号码 ,还有时间.
-						endCall();//挂断了电话. 呼叫记录可能还没有生成出来.
+//						endCall();//挂断了电话. 呼叫记录可能还没有生成出来.
 						//监视呼叫记录的数据库,看什么时候生成了记录,就把他删除掉.
 						Uri uri = Uri.parse("content://call_log/calls");
 						getContentResolver().registerContentObserver(uri, true, new ContentObserver(new Handler()) {
@@ -124,18 +124,18 @@ public class CallSmsSafeService extends Service {
 		}
 
 	}
-	public void endCall() {
-		//IBinder iBinder = ServiceManager.getService(TELEPHONY_SERVICE);
-		try {
-			Class clazz = CallSmsSafeService.class.getClassLoader().loadClass("android.os.ServiceManager");
-			Method method = clazz.getDeclaredMethod("getService", String.class);
-			IBinder iBinder = (IBinder) method.invoke(null, TELEPHONY_SERVICE);
-			ITelephony  iTelephony = ITelephony.Stub.asInterface(iBinder);
-			iTelephony.endCall();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
+//	public void endCall() {
+//		//IBinder iBinder = ServiceManager.getService(TELEPHONY_SERVICE);
+//		try {
+//			Class clazz = CallSmsSafeService.class.getClassLoader().loadClass("android.os.ServiceManager");
+//			Method method = clazz.getDeclaredMethod("getService", String.class);
+//			IBinder iBinder = (IBinder) method.invoke(null, TELEPHONY_SERVICE);
+//			ITelephony  iTelephony = ITelephony.Stub.asInterface(iBinder);
+//			iTelephony.endCall();
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
+//	}
 
 	/**
 	 * 删除呼叫记录
